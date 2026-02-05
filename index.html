@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S3 Starter Pack - Guía</title>
+    <title>S3 Starter Pack - 21 Pasos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -23,43 +23,39 @@
             min-height: 100vh;
         }
 
-        /* Encabezado */
         header {
             text-align: center;
             color: var(--blanco);
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
             font-size: 2.5rem;
             font-weight: 800;
             margin: 0;
-            letter-spacing: 1px;
+            line-height: 1.2;
         }
 
         header p {
             font-size: 1.2rem;
-            font-weight: 400;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             color: var(--naranja-claro);
-            margin-top: 10px;
+            margin-top: 15px;
             text-transform: uppercase;
         }
 
-        /* Contenedor principal */
         .contenedor-pasos {
-            max-width: 650px;
+            max-width: 700px;
             width: 90%;
-            flex-grow: 1; /* Empuja el footer hacia abajo */
+            margin-bottom: 50px;
         }
 
-        /* Tarjetón */
         .tarjeton {
             background-color: var(--blanco);
-            border-radius: 20px;
+            border-radius: 25px;
             padding: 40px;
-            margin-bottom: 50px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            margin-bottom: 60px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             text-align: center;
         }
 
@@ -68,35 +64,33 @@
             font-weight: 800;
             color: var(--terracota);
             margin: 0;
-            line-height: 1;
         }
 
         .descripcion {
             font-size: 1.1rem;
             color: var(--texto-oscuro);
-            margin: 25px 0;
+            margin: 20px 0;
             line-height: 1.6;
+            text-align: left;
         }
 
-        /* Ajuste para tus fotos locales */
         .imagen-paso {
             width: 100%;
             height: auto;
-            border-radius: 12px;
-            border: 1px solid #eee;
-            margin-top: 10px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            display: block;
+            margin-top: 20px;
         }
 
-        /* Footer */
         footer {
             width: 100%;
-            padding: 30px 0;
+            padding: 40px 0;
             color: var(--naranja-claro);
             text-align: center;
             font-size: 0.9rem;
-            background-color: rgba(0,0,0,0.1); /* Sutil contraste */
+            background-color: rgba(0,0,0,0.15);
         }
-
     </style>
 </head>
 <body>
@@ -110,48 +104,134 @@
 
         <div class="tarjeton">
             <h2 class="numero-paso">PASO 1</h2>
-            <p class="descripcion">
-               Entra en tu consola de AWS, busca S3 y haz clic en Create bucket.
+            <p class="descripcion">Inicia sesión en tu Consola de Administración de AWS (AWS Management Console).
+                En el buscador de servicios, escribe "S3" y selecciona el primer resultado.
+                Una vez dentro, haz clic en el botón naranja "Crear bucket" para empezar la configuración.
             </p>
-            <img src="paso1.png" alt="Captura del paso 1" class="imagen-paso">
+            <img src="paso1.png" alt="Paso 1" class="imagen-paso">
         </div>
 
         <div class="tarjeton">
             <h2 class="numero-paso">PASO 2</h2>
-            <p class="descripcion">
-                Dale un nombre que sea único (preferiblemente el de tu dominio) y selecciona la región más cercana a tus usuarios.
-            </p>
-            <img src="paso2.png" alt="Captura del paso 2" class="imagen-paso">
+            <p class="descripcion">Asigna un nombre a tu Bucket (preferiblemente el de tu dominio). Recuerda que debe ser único globalmente y no contener mayúsculas.</p>
+            <img src="paso2.png" alt="Paso 2" class="imagen-paso">
         </div>
-    
+
         <div class="tarjeton">
             <h2 class="numero-paso">PASO 3</h2>
-            <p class="descripcion">
-                Deja el resto de configuraciones predeterminadas y pulsa sobre "Crear bucket".
-            </p>
-            <img src="paso3.png" alt="Captura del paso 2" class="imagen-paso">
+            <p class="descripcion">Deja el resto de configuraciones predeterminadas y haz clic en el botón naranja "Create bucket" para empezar la configuración.</p>
+            <img src="paso3.png" alt="Paso 3" class="imagen-paso">
         </div>
 
         <div class="tarjeton">
             <h2 class="numero-paso">PASO 4</h2>
-            <p class="descripcion">
-                Pinchamos sobre nuestro bucket para acceder a la configuración.
-            </p>
-            <img src="paso4.png" alt="Captura del paso 2" class="imagen-paso">
+            <p class="descripcion"> Pinchamos sobre nuestro bucket para acceder a la configuración.</p>
+            <img src="paso4.png" alt="Paso 4" class="imagen-paso">
         </div>
 
         <div class="tarjeton">
             <h2 class="numero-paso">PASO 5</h2>
-            <p class="descripcion">
-                Vamos a cargar nuestros archivos. Puedes hacerlo o bien por archivos o bien por carpetas. Puedes pulsar sobre los botones o arrastrar la carpeta directamente.
-            </p>
-            <img src="paso5.png" alt="Captura del paso 2" class="imagen-paso">
+            <p class="descripcion">Vamos a cargar nuestros archivos pulsando cualquiera de estos dos botones.</p>
+            <img src="paso5.png" alt="Paso 5" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 6</h2>
+            <p class="descripcion">Puedes hacerlo o bien por archivos o bien por carpetas. Puedes pulsar sobre los botones o arrastrar la carpeta directamente.</p>
+            <img src="paso6.png" alt="Paso 6" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 7</h2>
+            <p class="descripcion">En este paso, hemos cargado nuestros archivos</p>
+            <img src="paso7.png" alt="Paso 7" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 8</h2>
+            <p class="descripcion">Deja el resto de configuraciones de forma predeterminada y pulsa sobre "Cargar"</p>
+            <img src="paso8.png" alt="Paso 8" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 9</h2>
+            <p class="descripcion">Si deseas eliminar algún archivo, puedes seleccionarlo sobre la lista y pulsar sobre el botón de "Eliminar". Deberás confirmar la eliminación escribiendo sobre el campo de texto.</p>
+            <img src="paso9.png" alt="Paso 9" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 10</h2>
+            <p class="descripcion">Sigue la ruta marcada arriba a la izquierda para volver a la configuración de tu bucket.
+                Con el bucket marcado, ve a la pestaña de "Permisos" </p>
+            <img src="paso10.png" alt="Paso 10" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 11</h2>
+            <p class="descripcion">En la sección de "Bloquear acceso público" pulsa sobre "Editar".</p>
+            <img src="paso11.1.png" alt="Paso 11" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 12</h2>
+            <p class="descripcion">En este paso, deselecciona el botón de "Bloquear todo el acceso público" y pincha sobre "Guardar cambios".</p>
+            <img src="paso12.1.png" alt="Paso 12" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 13</h2>
+            <p class="descripcion">En esa misma pestaña de permisos, ahora vamos a editar las "Políticas de bucket"</p>
+            <img src="paso11.png" alt="Paso 13" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 14</h2>
+            <p class="descripcion">Escribe el siguiente script y no olvides poner el nombre de tu bucket en la parte señalada.</p>
+            <img src="paso12.png" alt="Paso 14" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 15</h2>
+            <p class="descripcion">Al guardar la política, debe salirte un mensaje como el siguiente:</p>
+            <img src="paso13.png" alt="Paso 15" class="imagen-paso">
+            <p class="descripcion">En caso de que aparezca algún mensaje de error como el siguiente, revisa si has escrito bien el nombre de tu bucket</p>
+            <img src="error.png" alt="Error" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 16</h2>
+            <p class="descripcion">Puedes volver a la pestaña de configuración de tu bucket, y ahora pulsaremos sobre "Propiedades".</p>
+            <img src="paso14.png" alt="Paso 16" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 17</h2>
+            <p class="descripcion">Bajaremos hasta casi abajo, a la sección donde pone "Alojamiento de sitios web estáticos" y haremos click sobre "Editar".</p>
+            <img src="paso15.png" alt="Paso 17" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 18</h2>
+            <p class="descripcion">Aquí habilitaremos el alojamiento de sitios web estáticos. En tipo de alojamiento lo dejamos como "Alojar un sitio web estático", y en "Dcoumento de índice" seleccionaremos nuestro documento principal. En nuestro caso, al tratarse de una web, le indicaremos el documento de index.html</p>
+            <img src="paso16.png" alt="Paso 18" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 19</h2>
+            <p class="descripcion">Una vez guardado, podemos copiar el punto de enlace de nuestro sitio web</p>
+            <img src="paso19.png" alt="Paso 19" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 20</h2>
+            <p class="descripcion">¡Felicidades! Abre el enlace en una nueva ventana. Tu web ya está en órbita.</p>
+            <img src="paso18.png" alt="Paso 21" class="imagen-paso">
         </div>
 
     </div>
 
     <footer>
-        Cloud Data 2026 - Adalab
+        copyright Cloud Data 2026 - Adalab
     </footer>
 
 </body>
