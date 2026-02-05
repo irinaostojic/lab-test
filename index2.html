@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Starter Pack - Guía</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --terracota: #c26e4e; 
+            --blanco: #ffffff;
+            --texto-oscuro: #333333;
+            --naranja-claro: #ffdecb;
+        }
+
+        body {
+            background-color: var(--terracota);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            color: var(--blanco);
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: var(--naranja-claro);
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor principal */
+        .contenedor-pasos {
+            max-width: 650px;
+            width: 90%;
+            flex-grow: 1; /* Empuja el footer hacia abajo */
+        }
+
+        /* Tarjetón */
+        .tarjeton {
+            background-color: var(--blanco);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .numero-paso {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--terracota);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .descripcion {
+            font-size: 1.1rem;
+            color: var(--texto-oscuro);
+            margin: 25px 0;
+            line-height: 1.6;
+        }
+
+        /* Ajuste para tus fotos locales */
+        .imagen-paso {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 30px 0;
+            color: var(--naranja-claro);
+            text-align: center;
+            font-size: 0.9rem;
+            background-color: rgba(0,0,0,0.1); /* Sutil contraste */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CURSO S3 STARTER PACK 4 DUMMIES</h1>
+        <p>PON TU WEB EN ÓRBITA</p>
+    </header>
+
+    <div class="contenedor-pasos">
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 1</h2>
+            <p class="descripcion">
+               Entra en tu consola de AWS, busca S3 y haz clic en Create bucket.
+            </p>
+            <img src="paso1.png" alt="Captura del paso 1" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 2</h2>
+            <p class="descripcion">
+                Dale un nombre que sea único (preferiblemente el de tu dominio) y selecciona la región más cercana a tus usuarios.
+            </p>
+            <img src="paso2.png" alt="Captura del paso 2" class="imagen-paso">
+        </div>
+    
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 3</h2>
+            <p class="descripcion">
+                Deja el resto de configuraciones predeterminadas y pulsa sobre "Crear bucket".
+            </p>
+            <img src="paso3.png" alt="Captura del paso 3" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 4</h2>
+            <p class="descripcion">
+                Pinchamos sobre nuestro bucket para acceder a la configuración.
+            </p>
+            <img src="paso4.png" alt="Captura del paso 4" class="imagen-paso">
+        </div>
+
+        <div class="tarjeton">
+            <h2 class="numero-paso">PASO 5</h2>
+            <p class="descripcion">
+                Vamos a cargar nuestros archivos. Puedes hacerlo o bien por archivos o bien por carpetas. Puedes pulsar sobre los botones o arrastrar la carpeta directamente.
+            </p>
+            <img src="paso5.png" alt="Captura del paso 5" class="imagen-paso">
+        </div>
+
+    </div>
+
+    <footer>
+        Cloud Data 2026 - Adalab
+    </footer>
+
+</body>
+</html>
